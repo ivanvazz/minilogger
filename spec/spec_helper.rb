@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 require "minilogger"
+require "minilogger/severity"
+require "minilogger/fileable"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
