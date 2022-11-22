@@ -1,6 +1,6 @@
 require_relative "minilogger/version"
 require_relative "minilogger/fileable"
-require_relative "minilogger/loggeable"
+require_relative "minilogger/loggable"
 require_relative "minilogger/severity"
 
 module Minilogger
@@ -11,7 +11,7 @@ module Minilogger
   class MyLogger
     include Severity
     include Fileable
-    include Loggeable
+    include Loggable
 
     attr_accessor :message, :level, :info_size, :warn_size, :error_size, :info, :warn,
                   :error, :buffered_info_log, :buffered_warn_log, :buffered_error_log, :tags

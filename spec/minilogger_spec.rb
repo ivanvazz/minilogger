@@ -1,4 +1,3 @@
-# frozen_string_literal: true
 require 'spec_helper'
 require 'minilogger'
 require 'minilogger/my_reverse_logger'
