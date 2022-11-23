@@ -24,7 +24,7 @@ module Minilogger
 
       File.open(log_file, 'a') do |file|
         if log.include?("\n")
-            log.split("\n").each do |line|
+          log.split("\n").each do |line|
             file.puts line
           end
         else
